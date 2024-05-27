@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поштова форма</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Поштова форма</h1>
+    <div class="form-container">
+        <form name="mailer" method="post" enctype="text/plain" onSubmit="msg(); return checkIt();">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="Email" size="24">
+            <label for="subject">Тема:</label>
+            <input type="text" id="subject" name="Subject" size="24">
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="Message" cols="40" rows="6"></textarea>
+            <button type="submit">Відправити</button>
+            <button type="reset">Очистити</button>
+        </form>
+    </div>
+</body>
+</html>
